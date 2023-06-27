@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ExtractAudioFromVideo" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#334CF1</item>
+        <item name="colorPrimaryVariant">#374DDA</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="1">#1D3AEF</item>
+    </style>
+
+    <style name="Theme.ExtractAudioFromVideo" parent="Base.Theme.ExtractAudioFromVideo" />
+</resources>
