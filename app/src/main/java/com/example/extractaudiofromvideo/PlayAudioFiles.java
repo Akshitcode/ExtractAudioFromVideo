@@ -23,7 +23,6 @@ public class PlayAudioFiles extends AppCompatActivity {
         Uri audioUri = getIntent().getData();
         FileClass fileClass = (FileClass) getIntent().getSerializableExtra("AUDIO_FILE");
 
-        mediaPlayer = MediaPlayer.create(PlayAudioFiles.this, audioUri);
 
         btnplay = findViewById(R.id.btnStartPlaying);
         btnStop = findViewById(R.id.btnStopPlaying);
@@ -32,6 +31,7 @@ public class PlayAudioFiles extends AppCompatActivity {
         fileName = findViewById(R.id.txtFileName);
 
         fileName.setText(fileClass.getFile().getName());
+        mediaPlayer = MediaPlayer.create(PlayAudioFiles.this, audioUri);
 
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
